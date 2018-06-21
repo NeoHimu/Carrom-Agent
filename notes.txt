@@ -1,0 +1,18 @@
+This algorithm divides the board into six parts and strikes the coin with full force:
+a.) Two parts below the baseline
+	For left lower part, striker is placed at 0.75 and hit a coin in this area
+	and for right lower part, striker is placed at 0.25 and hit a coin in this area.
+	If coins are in both areas then area with maximum number of coins are chosen.
+b.) Third part is area between board wall and left vertical baseline.
+	For this part, striker is placed at the 0 position and a coin in this area is hit.
+c.) Fourth part is area between board wall and right vertical baseline.
+        For this part, striker is placed at the 1 position and a coin in this area is hit.
+	If both third and fourth part contain some coins then area with maximum number of coins
+	are chosen.
+d.) Rest of the board is divided into two equal half by a vertical line passing trough the middle
+    of the board.
+	Part with the maximum number of coins is chosen and a coin in that part is striked by the striker
+	from middle position.
+	
+If none of the above satisfies the just select a coin randomly and then strike it from the middle with full force.
+Queen is given higher preference while selecting a coin in the algorithm so that it can be covered early.  
